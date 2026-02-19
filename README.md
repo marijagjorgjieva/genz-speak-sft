@@ -54,9 +54,6 @@ Used for Base/Gen/Train comparison in `evaluation.ipynb`:
 - Optimizer: `adamw_8bit`
 - Logging steps: `10`
 
-### Method note
-- This project is **QLoRA**.
-- Reason: training uses LoRA adapters while the base model is loaded in 4-bit (`load_in_4bit=True`).
 
 ---
 
