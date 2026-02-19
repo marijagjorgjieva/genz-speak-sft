@@ -1,0 +1,32 @@
+[project]
+name = "genz-speak"
+version = "0.1.0"
+description = "Fine-tuning pipeline to create a Gen Z chatbot using Unsloth, Opik, and OpenRouter"
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+
+dependencies = [
+    "unsloth>=2026.2.1",
+    # Observability & Evaluation
+    "opik>=1.10.16",
+    # OpenRouter (OpenAI-compatible client)
+    "openai>=2.21.0",
+    # Utilities
+    "tqdm>=4.67.3",
+    "python-dotenv>=1.2.1",
+    "rich>=14.3.2",
+    "wandb>=0.25.0",
+    "matplotlib>=3.10.8",
+    "seaborn>=0.13.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ipykernel>=7.2.0",
+    "jupyter>=1.1.1",
+]
+
+[dependency-groups]
+dev = [
+    "mypy>=1.19.1",
+]
